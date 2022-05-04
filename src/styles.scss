@@ -1,1 +1,32 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+body {
+  background-color: #010c15;
+  position: relative;
+  margin: 3%;
+}
+
+p {
+  color: #ffffff;
+}
+
+$colors: (
+  dark-primary: #01080e,
+  light-primary: #011221,
+  lighter-primary: #011627,
+  gray-secondary: #607b96,
+  green-secondary: #3c9d93,
+  blue-secondary: #4d5bce,
+  white: #ffffff,
+  orange-accent: #fea55f,
+  green-accent: #43d9ad,
+  pink-accent: #e99287,
+  purple-accent: #c98bdf,
+  line: #1e2d3d,
+  blue-gradient: #4d5bce,
+  green-gradient: #43d9ad,
+);
+
+@function color($color) {
+  @return map-get($colors, $color);
+}
