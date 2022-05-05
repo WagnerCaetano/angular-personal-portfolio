@@ -1,5 +1,45 @@
+@import "../../../styles.scss";
+
 nav {
-  display: grid;
-  grid-auto-flow: column;
-  grid-template-columns: 3fr 5fr 2fr;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  background-color: color(lighter-primary);
+  border: 1px solid color(line);
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  padding: 0 !important;
+  height: 100%;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  column-gap: 10%;
+
+  div {
+    position: relative;
+    display: flex;
+  }
+
+  div:first-child {
+    padding-left: 2vw;
+  }
+
+  .nav-items .nav-item:first-child,
+  .nav-items .nav-item:last-child {
+    border-left: 1px solid color(line);
+    border-right: 1px solid color(line);
+  }
+
+  ul {
+    li {
+      padding: 12px;
+    }
+  }
+
+  li {
+    position: relative;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+  }
 }

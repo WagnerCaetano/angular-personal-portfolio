@@ -1,0 +1,17 @@
+@import "../../../styles.scss";
+
+footer {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  background-color: color(lighter-primary);
+  border: 1px solid color(line);
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding: 0 !important;
+  height: 100%;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  column-gap: 10%;
+}

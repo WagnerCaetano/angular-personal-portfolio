@@ -1,0 +1,10 @@
+@import "../../../styles.scss";
+
+div {
+  background-color: color(lighter-primary);
+  display: flex;
+  position: relative;
+  height: 75vh;
+  border-left: 1px solid color(line);
+  border-right: 1px solid color(line);
+}
